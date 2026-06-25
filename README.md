@@ -19,6 +19,8 @@ compounds.
 > the method is the transferable part. CRM means the customer database the sales team works
 > from.
 
+![Research Demo](./images/research-case-study.gif)
+
 ## The problem: high-stakes calls with no clean way to answer them
 
 The business was making brand, retention, and competitive calls on gut — which agencies
@@ -69,10 +71,12 @@ flowchart LR
   QUAL --> ANA
 ```
 
-WhatsApp delivery ran through Yazi, a vendor that sends surveys over the WhatsApp Business
+WhatsApp delivery ran through [Yazi](https://www.askyazi.com/), a vendor that sends surveys over the WhatsApp Business
 API — Meta's official channel for businesses to message customers — and opens a small in-chat
 app so people can answer fast. Email ran through SurveyMonkey. The analysis sits behind both
 and doesn't care which channel a response came from.
+
+![Research Demo](./images/yazi.png)
 
 ## Prioritisation calls under uncertainty
 
