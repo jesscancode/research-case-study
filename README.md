@@ -8,17 +8,18 @@ decision-grade evidence on what drives customer choice, where we lose them to co
 and why.
 
 I'm writing it the way I write a decision doc for engineering: problem first, then the
-calls I made and why, then the trade-offs I accepted. Diagrams carry the structure; prose
-explains the *why*. Where I made a prioritisation call under incomplete data, I've said so
+calls I made and why, then the trade-offs I accepted. Where I made a prioritisation call under incomplete data, I've said so
 and shown the commercial logic, because that's the part of product work that actually
 compounds.
 
 > **What I led.** I owned this end to end: research strategy, survey design, the tooling and
 > implementation, the qualitative interviews and thematic analysis, and the quantitative
-> analysis in Python — working with one co-researcher who supported parts of the quant. A
+> analysis in Python — working with one co-researcher who supported survey design and quant. A
 > two-person team. I name the real tools (Yazi for WhatsApp, SurveyMonkey for email) because
 > the method is the transferable part. CRM means the customer database the sales team works
 > from.
+
+![Research Demo](./images/research-case-study.gif)
 
 ## The problem: high-stakes calls with no clean way to answer them
 
@@ -43,7 +44,7 @@ email-only survey returns a sample too small and too skewed to make a national c
 
 ## The system: discovery to decision, end to end
 
-I ran it as a pipeline with separable stages, so a problem in one never silently corrupted
+I ran it as a pipeline with separable stages, so a problem in one never corrupted
 the next. Clean the contacts, route each person to a single channel, collect on two
 platforms, quality-check, then analyse and layer interviews on top.
 
@@ -70,10 +71,12 @@ flowchart LR
   QUAL --> ANA
 ```
 
-WhatsApp delivery ran through Yazi, a vendor that sends surveys over the WhatsApp Business
+WhatsApp delivery ran through [Yazi](https://www.askyazi.com/), a vendor that sends surveys over the WhatsApp Business
 API — Meta's official channel for businesses to message customers — and opens a small in-chat
 app so people can answer fast. Email ran through SurveyMonkey. The analysis sits behind both
 and doesn't care which channel a response came from.
+
+![Research Demo](./images/yazi.png)
 
 ## Prioritisation calls under uncertainty
 
